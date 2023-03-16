@@ -39,5 +39,14 @@ int main() {
     std::cout << gameManager.vehiculeIsAvailableInGame_toString(game, vehicule2) << std::endl;
     std::cout << gameManager.vehiculeIsAvailableInGame_toString(game, vehicule3) << std::endl;
 
+    Vehicule vehiculeTest("Ma superbe voiture", 3, 2);
+
+    if (gameManager.vehiculeIsAvailableInGame(game, vehiculeTest)) {
+        gameManager.generateSpawnGame(game, vehiculeTest);
+        std::cout << "\n" << std::endl;
+        vehiculeTest.setPosition(0,0);
+        gameManager.generateSpawnGame(game, vehiculeTest);
+    }
+
     return 0;
 }
