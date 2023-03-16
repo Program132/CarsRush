@@ -1,8 +1,9 @@
 #include <iostream>
 
-#include "src/GameMotor/GameMotor.h"
+#include "src/GameInfo/GameInfo.h"
 #include "src/Vehicule/Vehicule.h"
 #include "src/Position/Position.h"
+#include "src/GameManager/GameManager.h"
 
 int main() {
     int size_x;
@@ -15,7 +16,7 @@ int main() {
     std::cin >> size_y;
     std::cout << "\n";
 
-    GameMotor game(size_x, size_y);
+    GameInfo game(size_x, size_y);
 
     Vehicule vehicule("Ma superbe voiture");
     Vehicule vehicule2("Ma superbe voiture", 3, 2);
@@ -32,6 +33,11 @@ int main() {
     std::cout << vehicule.toString() << std::endl;
     std::cout << vehicule2.toString() << std::endl;
     std::cout << vehicule3.toString() << std::endl;
+
+    GameManager gameManager;
+    std::cout << gameManager.vehiculeIsAvailableInGame_toString(game, vehicule) << std::endl;
+    std::cout << gameManager.vehiculeIsAvailableInGame_toString(game, vehicule2) << std::endl;
+    std::cout << gameManager.vehiculeIsAvailableInGame_toString(game, vehicule3) << std::endl;
 
     return 0;
 }
