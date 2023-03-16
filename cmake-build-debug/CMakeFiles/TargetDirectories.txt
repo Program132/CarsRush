@@ -1,3 +1,0 @@
-D:/GitHub/CarsRush/cmake-build-debug/CMakeFiles/CarsRush.dir
-D:/GitHub/CarsRush/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/GitHub/CarsRush/cmake-build-debug/CMakeFiles/rebuild_cache.dir
