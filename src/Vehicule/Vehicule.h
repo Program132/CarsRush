@@ -8,7 +8,7 @@
 class Vehicule {
 public:
     Vehicule();
-    Vehicule(std::string name);
+    explicit Vehicule(std::string name);
     Vehicule(std::string name, Position position);
     Vehicule(std::string name, int x, int y);
 
