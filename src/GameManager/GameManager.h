@@ -10,6 +10,8 @@ class GameManager {
 public:
     bool vehiculeIsAvailableInGame(GameInfo gameInfo, Vehicule v);
     std::string vehiculeIsAvailableInGame_toString(GameInfo gameInfo, Vehicule v);
+
+    void generateSpawnGame(GameInfo gameInfo, Vehicule v);
 };
 
 
