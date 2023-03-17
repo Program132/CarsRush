@@ -16,9 +16,13 @@ public:
     void updateLengths(int x, int y);
     void setX(int x);
     void setY(int y);
-    int getX();
-    int getY();
+    int getX() const;
+    int getY() const;
     std::string toString();
+
+    // Game Information to Player Methods:
+
+    static void sendContentGame();
 };
 
 #endif
