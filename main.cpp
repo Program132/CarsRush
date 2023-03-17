@@ -26,10 +26,7 @@ int main() {
     Move move;
     EndGame endGame(gameInfo);
 
-    std::cout << vehicule.toString() << std::endl;
-
     GameManager gameManager;
-    std::cout << gameManager.vehiculeIsAvailableInGame_toString(gameInfo, vehicule) << std::endl;
 
     if (gameManager.vehiculeIsAvailableInGame(gameInfo, vehicule)) {
         GameInfo::sendContentGame();

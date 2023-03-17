@@ -7,7 +7,7 @@ Vehicule::Vehicule(std::string name) {
     this->position = Position(0,0);
 }
 
-Vehicule::Vehicule(std::string name, Position position) {
+[[maybe_unused]] [[maybe_unused]] Vehicule::Vehicule(std::string name, Position position) {
     this->name = name;
     this->position = position;
 }

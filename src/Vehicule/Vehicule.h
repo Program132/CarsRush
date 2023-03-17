@@ -9,7 +9,8 @@ class Vehicule {
 public:
     Vehicule();
     explicit Vehicule(std::string name);
-    Vehicule(std::string name, Position position);
+
+    [[maybe_unused]] Vehicule(std::string name, Position position);
     Vehicule(std::string name, int x, int y);
 
     std::string name;
